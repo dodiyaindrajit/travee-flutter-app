@@ -1,16 +1,35 @@
 # travee
+travee is a travel & tourism based flutter app, travee gives you travel packages based on  categories, like trekking, weekends, beach, road trips and many more.
 
-A new Flutter project.
+travee app is developed to work with android and ios phones, With a responsive UI 
 
-## Getting Started
+ChatGPT is integrated in travee app as an support assistant.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![travee_1](https://github.com/karmalntest/travee-flutter-app/assets/88709906/d75b30c2-5005-4fea-8dbd-8e98ccce7dee)
+
+![travee_2](https://github.com/karmalntest/travee-flutter-app/assets/88709906/2f759b8c-664c-4a3b-9814-0854e6fbfdb4)
+
+![travee_3](https://github.com/karmalntest/travee-flutter-app/assets/88709906/a6159968-63dc-4b08-855a-a1c9d8d47485)
+
+![travee_4](https://github.com/karmalntest/travee-flutter-app/assets/88709906/8af5b670-5bf0-498b-9381-a3cedde4d87c)
+
+
+
+# Videos
+
+
+https://github.com/karmalntest/travee-flutter-app/assets/88709906/fac5397e-a1fb-48e3-a8f7-ec235deceef6
+
+
+
+
+https://github.com/karmalntest/travee-flutter-app/assets/88709906/b2157cb4-8e71-4f57-bef1-7f82a77033fb
+
+
+
+https://github.com/karmalntest/travee-flutter-app/assets/88709906/26f9a704-dbe4-4ef4-a281-a4bc16913f42
+

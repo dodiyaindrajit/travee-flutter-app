@@ -21,7 +21,9 @@ ChatGPT is integrated in travee app as an support assistant.
 
 # Videos
 
-https://github.com/karmalntest/travee-flutter-app/assets/88709906/fac5397e-a1fb-48e3-a8f7-ec235deceef6
-https://github.com/karmalntest/travee-flutter-app/assets/88709906/b2157cb4-8e71-4f57-bef1-7f82a77033fb
-https://github.com/karmalntest/travee-flutter-app/assets/88709906/26f9a704-dbe4-4ef4-a281-a4bc16913f42
+https://github.com/karmalntest/travee-flutter-app/assets/88709906/1ab7e13c-84b1-43fc-ae41-e45e639fd472
+
+https://github.com/karmalntest/travee-flutter-app/assets/88709906/1a787585-b7af-40b8-aca0-1bcfcf115233
+
+https://github.com/karmalntest/travee-flutter-app/assets/88709906/43116542-2efe-4a89-bf4d-46ed3c2ad3fa
 

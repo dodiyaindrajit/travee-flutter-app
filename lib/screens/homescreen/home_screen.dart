@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     /// username
                     const Text(
-                      "Hi, Vishal",
+                      "Hi, John",
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Colors.black),
                     ),
                     Expanded(child: Container()),

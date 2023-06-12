@@ -1,12 +1,8 @@
-import 'dart:developer';
-
 import 'package:chat_gpt_sdk/chat_gpt_sdk.dart';
-
-//import 'package:dart_openai/dart_openai.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
 import 'package:get/get.dart';
-
+import 'package:lottie/lottie.dart';
 import '../../resources/color.dart';
 
 class ChatModel {
@@ -29,6 +25,8 @@ class ChatBotScreen extends StatefulWidget {
 class _ChatBotScreenState extends State<ChatBotScreen> {
   List<ChatModel> chatList = [];
   var textController = TextEditingController();
+
+  bool isChatLoading = false;
 
   @override
   void initState() {
@@ -93,20 +91,30 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
                                   ),
                                 ),
                               )
-                            : ChatBubble(
-                                clipper: ChatBubbleClipper2(type: BubbleType.receiverBubble),
-                                backGroundColor: const Color(0xffE7E7ED),
-                                margin: const EdgeInsets.only(top: 20),
-                                child: Container(
-                                  constraints: BoxConstraints(
-                                    maxWidth: MediaQuery.of(context).size.width * 0.7,
+                            : item.text.isEmpty
+                                ? Container(
+                                    margin: const EdgeInsets.only(top: 20),
+                                    child: Lottie.asset(
+                                      "assets/images/chat_anim.json",
+                                      width: 38,
+                                      height: 38,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  )
+                                : ChatBubble(
+                                    clipper: ChatBubbleClipper2(type: BubbleType.receiverBubble),
+                                    backGroundColor: const Color(0xffE7E7ED),
+                                    margin: const EdgeInsets.only(top: 20),
+                                    child: Container(
+                                      constraints: BoxConstraints(
+                                        maxWidth: MediaQuery.of(context).size.width * 0.7,
+                                      ),
+                                      child: Text(
+                                        item.text,
+                                        style: const TextStyle(color: Colors.black, fontSize: 16),
+                                      ),
+                                    ),
                                   ),
-                                  child: Text(
-                                    item.text,
-                                    style: const TextStyle(color: Colors.black, fontSize: 16),
-                                  ),
-                                ),
-                              ),
                       );
                     },
                   ),
@@ -180,6 +188,8 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
   }
 
   void chatGptModel(String question) async {
+    chatList.add(ChatModel(type: "a", text: ""));
+    setState(() {});
     String answer = "";
     String gptApiKey = "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";
     final openAI = OpenAI.instance
@@ -195,6 +205,7 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
       print("data -> ${element.message?.content}");
     }
 
+    chatList.removeLast();
     chatList.add(ChatModel(type: "a", text: answer));
     setState(() {});
   }

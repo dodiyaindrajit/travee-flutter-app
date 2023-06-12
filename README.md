@@ -1,5 +1,7 @@
 # travee
-travee is a travel & tourism based flutter app, travee gives you travel packages based on  categories, like trekking, weekends, beach, road trips and many more.
+Travee is a Travel and Tourism based Flutter Application with ChatGPT integrated
+
+travee gives you travel packages based on  categories, like trekking, weekends, beach, road trips and many more.
 
 travee app is developed to work with android and ios phones, With a responsive UI 
 

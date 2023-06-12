@@ -244,64 +244,66 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(color: kBlackColor, fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 20),
-                      SizedBox(
-                        height: Get.height / 3,
-                        child: ListView.builder(
-                          padding: EdgeInsets.zero,
-                          shrinkWrap: true,
-                          physics: const AlwaysScrollableScrollPhysics(),
-                          scrollDirection: Axis.horizontal,
-                          itemCount: packageList.length,
-                          itemBuilder: (context, index) {
-                            return Hero(
-                              tag: "packageImage$index",
-                              transitionOnUserGestures: true,
-                              child: GestureDetector(
-                                onTap: () => Get.to(
-                                    PackageDetailScreen(
-                                      package: packageList[index],
-                                      heroTag: 'packageImage$index',
-                                    ),
-                                    transition: Transition.native),
-                                child: Stack(
-                                  //  alignment: Alignment.center,
-                                  children: [
-                                    Container(
-                                      width: Get.width / 2.5,
-                                      margin: const EdgeInsets.only(right: 10),
-                                      padding: const EdgeInsets.all(5),
-                                      decoration: BoxDecoration(
-                                        color: kWhiteColor,
-                                        image: DecorationImage(
-                                          image: AssetImage(
-                                            packageList[index].photo,
+                      Flexible(
+                        child: SizedBox(
+                          height: Get.height / 3,
+                          child: ListView.builder(
+                            padding: EdgeInsets.zero,
+                            shrinkWrap: true,
+                            physics: const AlwaysScrollableScrollPhysics(),
+                            scrollDirection: Axis.horizontal,
+                            itemCount: packageList.length,
+                            itemBuilder: (context, index) {
+                              return Hero(
+                                tag: "packageImage$index",
+                                transitionOnUserGestures: true,
+                                child: GestureDetector(
+                                  onTap: () => Get.to(
+                                      PackageDetailScreen(
+                                        package: packageList[index],
+                                        heroTag: 'packageImage$index',
+                                      ),
+                                      transition: Transition.native),
+                                  child: Stack(
+                                    //  alignment: Alignment.center,
+                                    children: [
+                                      Container(
+                                        width: Get.width / 2.5,
+                                        margin: const EdgeInsets.only(right: 10),
+                                        padding: const EdgeInsets.all(5),
+                                        decoration: BoxDecoration(
+                                          color: kWhiteColor,
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                              packageList[index].photo,
+                                            ),
+                                            fit: BoxFit.cover,
                                           ),
-                                          fit: BoxFit.cover,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                    ),
-                                    Container(
-                                      width: Get.width / 2.5,
-                                      margin: const EdgeInsets.only(right: 10),
-                                      padding: const EdgeInsets.all(5),
-                                      decoration: BoxDecoration(
-                                        color: kBlackColor.withOpacity(0.25),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      child: Center(
-                                        child: Text(
-                                          packageList[index].name,
-                                          style:
-                                              TextStyle(color: kWhiteColor, fontSize: 20, fontWeight: FontWeight.bold),
+                                          borderRadius: BorderRadius.circular(10),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Container(
+                                        width: Get.width / 2.5,
+                                        margin: const EdgeInsets.only(right: 10),
+                                        padding: const EdgeInsets.all(5),
+                                        decoration: BoxDecoration(
+                                          color: kBlackColor.withOpacity(0.25),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            packageList[index].name,
+                                            style: TextStyle(
+                                                color: kWhiteColor, fontSize: 20, fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            );
-                          },
+                              );
+                            },
+                          ),
                         ),
                       ),
                     ],

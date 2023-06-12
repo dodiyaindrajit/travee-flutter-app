@@ -1,5 +1,4 @@
 # travee
-
 Travee is a Travel and Tourism based Flutter Application with ChatGPT integrated
 
 travee gives you travel packages based on  categories, like trekking, weekends, beach, road trips and many more.
@@ -39,9 +38,17 @@ ChatGPT is integrated in travee app as an support assistant.
 
 # Videos
 
-https://github.com/karmalntest/travee-flutter-app/assets/88709906/1ab7e13c-84b1-43fc-ae41-e45e639fd472
 
-https://github.com/karmalntest/travee-flutter-app/assets/88709906/1a787585-b7af-40b8-aca0-1bcfcf115233
+https://github.com/dodiyaindrajit/travee-flutter-app/assets/8991251/1c47927f-79cd-4c28-b450-94d44f7cea89
 
-https://github.com/karmalntest/travee-flutter-app/assets/88709906/43116542-2efe-4a89-bf4d-46ed3c2ad3fa
+
+
+
+https://github.com/dodiyaindrajit/travee-flutter-app/assets/8991251/857ffe01-15cc-4bc2-8f85-40540b5edfb1
+
+
+
+
+https://github.com/dodiyaindrajit/travee-flutter-app/assets/8991251/32e310f7-fef9-4221-9e99-19e0e2805668
+
 
